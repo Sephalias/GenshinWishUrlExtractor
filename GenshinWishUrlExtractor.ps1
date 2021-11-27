@@ -4,6 +4,7 @@
 
 $OutputLogTxtFilePath = ""
 $Region = ""
+[bool] $OutputLogTxtFileExists = 0
 
 function SelectRegion {
     Clear-Host
@@ -24,13 +25,12 @@ function SelectRegion {
             $script:OutputLogTxtFilePath = $env:USERPROFILE + "\AppData\LocalLow\miHoYo\Genshin Impact\output_log.txt"
         }
     }
+    $script:OutputLogTxtFileExists = Test-Path $OutputLogTxtFilePath
     Clear-Host
 }
 
-
-$OutputLogTxtFileExists = Test-Path $OutputLogTxtFilePath
-
 $host.UI.RawUI.WindowTitle = "Genshin Wish URL Extractor"
+
 function prompt { '' }
 
 Function MainMenu {
