@@ -5,5 +5,5 @@ I wrote this script to simplify getting getting the url in the output_log.txt wh
 ![WindowsTerminalSample](Images/WindowsTerminal_Sample.png)
 
 ## How to use
-- Go to releases and download `GenshinWishUrlExtractor.ps1`
+- Go to [Releases](https://github.com/vilibs/GenshinWishUrlExtractor/releases) and download `GenshinWishUrlExtractor.ps1`
 - Right Click the file and run it with Powershell
